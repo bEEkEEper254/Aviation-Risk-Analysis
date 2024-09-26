@@ -24,13 +24,23 @@ The dataset used for this project is sourced from the National Transportation Sa
    - Columns with more than 50% of missing values were dropped. Others were filled with the appropriate mean, mode, and median. Only columns relevant to the analysis were considered. These included: Event Date Country, Injury Severity, Location, Aircraft Damage, Make, Model, Amateur Built, Number of Engines, Engine Type, Purpose of Flight, Total Fatal Injuries, Total Uninjured, Weather Condition, and Broad Phase of Flight.
 
    - Any transformations applied to the dataset.
+Injury Severity: Filled missing values with the most frequent value (mode).
+Location: Removed rows where the 'Location' field had missing values.
+Country: Removed rows where the 'Country' field had missing values.
+Aircraft Damage: Removed rows where the 'Aircraft Damage' field had missing values.
+Engine Type: Removed rows where the 'Engine Type' field had missing values.
+Broad Phase of Flight: Filled missing values with the most frequent value (mode).
+Total Fatal Injuries: Filled missing values with the most frequent value (mode).
+Remaining Missing Values: Removed any rows that still contained missing values after the previous operations.
+Final Dataset Shape: Checked the number of rows and columns in the final cleaned dataset.
 
 2. *Data Analysis*
-   - Overview of the analysis performed, including any statistical methods or models used.
-   - Key metrics calculated (e.g., survivability rates, accident frequencies).
+   Pandas was used to analyze the data
+   Key metrics calculated included locations of accidents, distribution of accidents over the years, aircraft category most prone to accident, the aircraft make, model, and purpose of flight, and the effect of weather.
 
 3. *Data Visualization*
-   - Types of visualizations created (e.g., bar charts, line graphs).
+   The following plots were obtained:
+   
    - Tools used for visualization (e.g., Tableau, Matplotlib).
 
 ## Recommendations
